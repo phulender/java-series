@@ -1,0 +1,25 @@
+import java.util.*;
+import java.lang.*;
+import java.io.*;
+
+public class Main
+{
+	public static void main (String[] args) throws java.lang.Exception
+	{
+		 Scanner sc = new Scanner(System.in);
+      int n = sc.nextInt();
+      int x = n;
+      int sum = 0;
+      while (x > 0) {
+        int r = x % 10;
+        sum = sum+(r*r*r);
+        x = x / 10;
+      }
+    if(sum==n){
+      System.out.println("1");
+    }
+    else{
+      System.out.println("0");
+    }
+	}
+}
